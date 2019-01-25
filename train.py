@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import sugartensor as tf
+import tensorflow as tf
 import numpy as np
 
 
@@ -7,7 +7,7 @@ __author__ = 'buriburisuri@gmail.com'
 
 
 # set log level to debug
-tf.sg_verbosity(10)
+#tf.sg_verbosity(10)
 
 #
 # hyper parameters
@@ -156,4 +156,3 @@ def alt_train(sess, opt):
 
 # do training
 alt_train(log_interval=10, max_ep=30, ep_size=data.train.num_batch, early_stop=False)
-
